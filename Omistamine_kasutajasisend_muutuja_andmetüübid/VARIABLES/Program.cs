@@ -25,6 +25,11 @@
             //tee uus muutuja kuhu liidad eelnevad muutujad kokku. lisa nende vahele punkt ja tühik.
             //kuva uus muutuja välja
 
+            var keeleVäänaja = "valge lehma taga musta lehma saba";
+            var keeleVäänaja2 = "kirju lehma taga pruuni lehma saba";
+            var keeleVäänaja3 = keeleVäänaja + ". " + keeleVäänaja2;
+            Console.WriteLine(keeleVäänaja3);
+
             //6. kirjuta muutuja sõne andmetüübiga ja omista talle sisse tekst: musta lehma taga valge lehma saba.
             //uuel koodireal liida sellele muutujale omistusoperaatoriga += otsa valge lehma taga musta lehma saba.
             //uuel koodireal liida sellele muutujale omistusoperaatoriga += otsa kirju lehma taga pruuni lehma saba.
