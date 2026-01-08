@@ -14,6 +14,16 @@
             // -> do while tsükli tingimuseks kirjuta kontroll, mis kontrollib kas muutujas "täisarv" on arv miinuses rohkem kui -31
             // peale tsüklit kuva sõnum "tsükkel lõppes"
 
+            int täisArv = 0;
+            do
+            {
+                täisArv -= 2;
+                Console.WriteLine(täisArv);
+            }
+            while (täisArv > -31);
+            Console.WriteLine("tsükkel lõppes");
+
+
             // 2. "pikenda sõnumit"
             // tee muutuja "sõnum" mille sees on tühi string, nt ""
             // kirjuta do while tsükkel
@@ -66,6 +76,7 @@
             // tsükli tegevusena kuva kasutajale välja i, aga liida sellele üks juurde et lugemine algaks arvust 1
             // peale tsüklit kuva kasutajale sõnum "tsükkel lõppes"
 
+            /*
             int kuiPalju = 0;
             Console.WriteLine("mitu numbrit te tahate?");
             kuiPalju = int.Parse(Console.ReadLine());
@@ -74,6 +85,7 @@
                 Console.WriteLine(i+1);
             }
             Console.WriteLine("tsükkel lõppes");
+            */
 
             // 2. "Ruut"
             // tee muutuja "ruudukülg" milles on täisarv 0
