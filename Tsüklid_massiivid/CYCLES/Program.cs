@@ -66,6 +66,15 @@
             // tsükli tegevusena kuva kasutajale välja i, aga liida sellele üks juurde et lugemine algaks arvust 1
             // peale tsüklit kuva kasutajale sõnum "tsükkel lõppes"
 
+            int kuiPalju = 0;
+            Console.WriteLine("mitu numbrit te tahate?");
+            kuiPalju = int.Parse(Console.ReadLine());
+            for(int i = 0;i < kuiPalju;i++)
+            {
+                Console.WriteLine(i+1);
+            }
+            Console.WriteLine("tsükkel lõppes");
+
             // 2. "Ruut"
             // tee muutuja "ruudukülg" milles on täisarv 0
             // kuva kasutajale tekst millega küsid kasutajalt kui suurt ruutu ta tahab
@@ -76,6 +85,22 @@
             // nüüd sisemise tsükli sees, omista muutujale "seeRida" juurde liites sisse väärtus "HH" 
             // kui sisemine tsükkel on lõpetanud, siis kuva kasutajale see rida välja
             // kui ka esimene tsükkel on lõpetanud, siis kuva kasutajale tekst "tsüklid on lõpetanud"
+
+            /*
+            int ruudukülg = 0;
+            Console.WriteLine("kui suurt ruutu te tahate");
+            ruudukülg = int.Parse(Console.ReadLine());
+            for (int i = 0; i < ruudukülg; i++)
+            {
+                string seeRida = "";
+                for (int j = 0; j < ruudukülg; j++)
+                {
+                    seeRida = seeRida + "HH";
+                }
+                Console.WriteLine(seeRida);
+            }
+            Console.WriteLine("tsüklid on lõppenud");
+            */
 
             /* Foreach + list ülesanded */
 
