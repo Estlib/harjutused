@@ -14,14 +14,14 @@
             // -> do while tsükli tingimuseks kirjuta kontroll, mis kontrollib kas muutujas "täisarv" on arv miinuses rohkem kui -31
             // peale tsüklit kuva sõnum "tsükkel lõppes"
 
-            int täisArv = 0;
-            do
-            {
-                täisArv -= 2;
-                Console.WriteLine(täisArv);
-            }
-            while (täisArv > -31);
-            Console.WriteLine("tsükkel lõppes");
+            //int täisArv = 0;
+            //do
+            //{
+            //    täisArv -= 2;
+            //    Console.WriteLine(täisArv);
+            //}
+            //while (täisArv > -31);
+            //Console.WriteLine("tsükkel lõppes");
 
 
             // 2. "pikenda sõnumit"
@@ -125,6 +125,15 @@
              * kui programm on õigesti kirjutatud, 
              * siis kuvatakse kasutajale välja elemendid kakskümmend ja viiskümmend
              */
+
+            int[] apelsiniMahl = [1, 50, 10, 15, 20];
+            foreach (var arv in apelsiniMahl) 
+            {
+                if(arv > 15)
+                {
+                    Console.WriteLine(arv);
+                }
+            }
 
             // 2. "summeerimine"
             // kirjuta viie elemendiga massiiv, elemendid on 343,686,2300,4439,6996, muutuja nimi otsusta ise.
