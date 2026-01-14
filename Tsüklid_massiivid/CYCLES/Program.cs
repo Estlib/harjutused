@@ -59,7 +59,7 @@
                 }
             }
             Console.WriteLine("EVAKUEERU HOONEST!! CO2 tase on liiga kõrgel!!");
-            
+
 
 
 
