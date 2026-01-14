@@ -1,0 +1,84 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Page-1" id="SDBjnFZg5V8sdTWfaQtd">
+    <mxGraphModel dx="1687" dy="993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-1" value="// 1. &quot;niikaua kuni ohtu pole&quot;&#xa;// tee muutuja &quot;CO2tase&quot; mille sees on komakohaga float 0.0f ✅&#xa;// kirjuta while tsükkel&#xa;// -&gt; while tsükli tingimuseks kirjuta kontroll, mis kontrollib kas muutujas &quot;CO2tase&quot; on arv väiksem kui 40.000&#xa;// tsükli tegevusena kuva sõnum &quot;mis on co2 tase?&quot;&#xa;// pane muutujasse &quot;CO2tase&quot; info kasutajalt&#xa;// tee tingimuslauseline kontroll, mis kontrollib, kui kasutaja sisestus on väiksem kui 40.000,&#xa;// siis kuva sõnum kasutajale teavitades, et otsest ohtu ei ole&#xa;// peale tsüklit kuva sõnum &quot;evakueeri hoonest, süsihappegaasi tase on liiga kõrgel&quot;&#xa;/* &#xa; * NB programm peab niikaua käima kuni kasutaja sisestus on suurem või võrdne kui 40.000&#xa; */" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="50" y="890" width="560" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-2" target="F0xU229PdjDJKHjdZoZZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-2" value="Algus" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-3" target="F0xU229PdjDJKHjdZoZZ-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-3" value="Tekita muutuja &quot;co2Tase&quot; mille omistama algse väärtuse 0.0f" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-5" target="F0xU229PdjDJKHjdZoZZ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-5" value="Kuva kasutajale tekst &lt;br&gt;&quot;Mis on co2 tase?&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-7" target="F0xU229PdjDJKHjdZoZZ-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340.02857142857147" y="550.0114285714285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-7" value="Oota kuni kasutaja on käsureale sisestanud väärtuse mille omistame muutujasse &quot;co2Tase&quot;" style="whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="460" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-11" target="F0xU229PdjDJKHjdZoZZ-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="600" />
+              <mxPoint x="200" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-11" value="Kuva kasutajale tekst &lt;br&gt;&quot;Otsest ohtu ei ole&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="240" y="570" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-17" target="F0xU229PdjDJKHjdZoZZ-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-17" value="Kuva kasutajale tekst &lt;br&gt;&quot;Evakueeri hoonest, co2 tase &lt;br&gt;on liiga kõrge!&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="240" y="690" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-20" target="F0xU229PdjDJKHjdZoZZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-25" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="F0xU229PdjDJKHjdZoZZ-24">
+          <mxGeometry x="-0.1524" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="F0xU229PdjDJKHjdZoZZ-20" target="F0xU229PdjDJKHjdZoZZ-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="260" />
+              <mxPoint x="460" y="660" />
+              <mxPoint x="340" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-28" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="F0xU229PdjDJKHjdZoZZ-27">
+          <mxGeometry x="-0.7062" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-20" value="Kas väärtus &lt;br&gt;muutujas &quot;co2Tase&quot; on väiksem &lt;br&gt;kui 40f?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="240" y="220" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F0xU229PdjDJKHjdZoZZ-29" value="Lõpp" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="280" y="780" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

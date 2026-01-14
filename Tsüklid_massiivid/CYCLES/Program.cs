@@ -48,6 +48,21 @@
              * NB programm peab niikaua käima kuni kasutaja sisestus on suurem või võrdne kui 40.000
              */
 
+            float co2Tase = 0.0f;
+            while (co2Tase <= 40f)
+            {
+                Console.WriteLine("Mis on co2 tase?");
+                co2Tase = float.Parse(Console.ReadLine());
+                if (co2Tase <= 40f)
+                {
+                    Console.WriteLine("Otsest ohtu ei ole");
+                }
+            }
+            Console.WriteLine("EVAKUEERU HOONEST!! CO2 tase on liiga kõrgel!!");
+            
+
+
+
             // 2. "vibumees"
             // tee muutuja "mehike" mille sees on täisarv 0
             // tee muutuja "vastus" mille sees on tühi tekst
@@ -126,14 +141,14 @@
              * siis kuvatakse kasutajale välja elemendid kakskümmend ja viiskümmend
              */
 
-            int[] apelsiniMahl = [1, 50, 10, 15, 20];
-            foreach (var arv in apelsiniMahl) 
-            {
-                if(arv > 15)
-                {
-                    Console.WriteLine(arv);
-                }
-            }
+            //int[] apelsiniMahl = [1, 50, 10, 15, 20];
+            //foreach (var arv in apelsiniMahl) 
+            //{
+            //    if(arv > 15)
+            //    {
+            //        Console.WriteLine(arv);
+            //    }
+            //}
 
             // 2. "summeerimine"
             // kirjuta viie elemendiga massiiv, elemendid on 343,686,2300,4439,6996, muutuja nimi otsusta ise.
