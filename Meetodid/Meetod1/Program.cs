@@ -10,8 +10,9 @@ namespace Meetod1
             List<string> filmid = GetMovies();
             Console.WriteLine("Milline on sinu lemmikfilm?");
             string lemmikFilm = ReadAnswer();
-            DoesMovieExist(filmid, lemmikFilm);
+            DoesMovieExist(filmid, lemmikFilm); //<--
             filmid = DoYouLikeThisMovie(filmid, "Tron 1983");
+            /*kasuta meetodit siin*/
             //foreach (string item in filmid)
             //{
             //    Console.WriteLine(item);
@@ -33,6 +34,9 @@ namespace Meetod1
              *Krati kohta "Vaata et ta sul tehisplära ajama ei hakka"
              */
         }
+
+        /* kodutöö meetod siia */
+
 
         public static List<string> DoYouLikeThisMovie(List<string> collection, string movieToAdd)
         {
