@@ -1,4 +1,6 @@
 ﻿
+using System.Reflection.Metadata;
+
 namespace FileOperation
 {
     internal class Program
@@ -14,8 +16,31 @@ namespace FileOperation
 
             Console.WriteLine("Kõik laulusõnad");
 
-            DisplayThisFile();
+            //DisplayThisFile();
+
+            FindWord("Billie");
         }
+        public static void FindWord(string findThisWord)
+        {
+            using (StreamReader readFile = new StreamReader(
+                "G:\\Users\\K\\Desktop\\thing\\harjutused\\Failid\\FileOperation\\mjbj.txt"
+                ))
+            {
+                int lnr = 0;
+                while (readFile.EndOfStream == false)
+                {
+                    string line = readFile.ReadLine();
+                    lnr++;
+
+                    if (line.Contains(findThisWord) == true)
+                    {
+                        Console.WriteLine(findThisWord+" leiti reast "+lnr);
+                    }
+                }
+                readFile.Close();
+            }
+        }
+
 
         private static void DisplayThisFile()
         {
@@ -24,7 +49,7 @@ namespace FileOperation
             {
                 using (
                     StreamReader readThisThing = new StreamReader
-                    ("G:\\Users\\K\\Desktop\\thing\\harjutused\\Failid\\FileOperation\\mjbj.txt") )
+                    ("G:\\Users\\K\\Desktop\\thing\\harjutused\\Failid\\FileOperation\\mjbj.txt"))
                 {
                     int lineCount = 0;
                     while (readThisThing.EndOfStream == false)
@@ -32,14 +57,14 @@ namespace FileOperation
                         lineCount++;
                         line = readThisThing.ReadLine();
                         int pikkus = line.Length;
-                        Console.WriteLine(lineCount+" "+line+" . Reapikkus on"+pikkus);
+                        Console.WriteLine(lineCount + " " + line + " . Reapikkus on" + pikkus);
                     }
                     readThisThing.Close();
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("Ei saa lugeda sest:"+e.Message);
+                Console.WriteLine("Ei saa lugeda sest:" + e.Message);
                 throw;
             }
         }
