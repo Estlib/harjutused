@@ -13,6 +13,8 @@ namespace Meetod1
             DoesMovieExist(filmid, lemmikFilm); //<--
             filmid = DoYouLikeThisMovie(filmid, "Tron 1983");
             /*kasuta meetodit siin*/
+            List<string> otsitavadFilmid = new List<string> { "Terminator", "Vanamehe Film", "Kratt" };
+            IdentifyMovies(filmid, otsitavadFilmid);
             //foreach (string item in filmid)
             //{
             //    Console.WriteLine(item);
@@ -36,7 +38,35 @@ namespace Meetod1
         }
 
         /* kodutöö meetod siia */
-
+        public static void IdentifyMovies(List<string> collection, List<string> filter)
+        {
+            //* Terminaatori kohta "Ill be back"
+            //* Vanamehe Filmi kohta "šnikurs"
+            //* Krati kohta "Vaata et ta sul tehisplära ajama ei hakka"
+            string messages = "";
+            foreach (var movie in collection)
+            {
+                int itemnr = 0;
+                foreach (var filterItem in filter)
+                {
+                    if (itemnr == 0)
+                    {
+                        messages += "I'll be back.\n";
+                    }
+                    else if (itemnr == 1)
+                    {
+                        messages += "Šnikurs\n";
+                    }
+                    else if (itemnr == 2)
+                    {
+                        messages += "Vaata et ta sul tehisplära ajama ei hakka\n";
+                    }
+                    itemnr++;
+                }
+                itemnr = 0;
+            }
+            Console.WriteLine(messages);
+        }
 
         public static List<string> DoYouLikeThisMovie(List<string> collection, string movieToAdd)
         {
@@ -50,7 +80,7 @@ namespace Meetod1
                     collection.Add(movieToAdd);
                     Console.WriteLine("Lisasin filmi sulle");
                 }
-                else 
+                else
                 {
                     Console.WriteLine("Aga miks? See on ju hea film?");
                 }
